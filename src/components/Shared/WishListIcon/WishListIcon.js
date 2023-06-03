@@ -3,7 +3,6 @@ import { Icon } from "semantic-ui-react";
 import classNames from "classnames";
 import { Wishlist } from "@/api";
 import { useAuth } from "@/hooks";
-import styles from "./WishlistIcon.module.scss";
 
 const wishlistCtrl = new Wishlist();
 
