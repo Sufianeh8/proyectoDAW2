@@ -1,0 +1,52 @@
+@import "~~/src/scss/index.scss";
+
+.container {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    >a {
+        > img {
+            left: 100%;
+            top: 20%;
+            height: 60px;
+        }
+
+        > i {
+            font-size: 26px;
+            color: $danger;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.blockLeft {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.blockRight {
+    background-image: url("/images/modern-preppy.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+
+}

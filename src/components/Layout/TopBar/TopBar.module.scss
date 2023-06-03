@@ -1,0 +1,36 @@
+@import "~/src/scss/index.scss";
+
+.topBar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    z-index: 5;
+  }
+  
+  .left {
+    margin-left: 5%;
+    width: 8%;
+    height: 70px;
+    
+    img {
+      margin-left: 25%;
+      height: 100%;
+    }
+  
+
+  }
+  
+  .center {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right {
+    margin-right: 5%;
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+  }

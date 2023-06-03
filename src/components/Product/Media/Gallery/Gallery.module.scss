@@ -1,0 +1,96 @@
+.gallery {
+  display: flex; /* Muestra los elementos de la galería en una fila */
+}
+
+.principal {
+  width: 25%; /* Establece el ancho del elemento principal al 25% del contenedor */
+  padding: 11px; /* Agrega un relleno de 11px alrededor del elemento principal */
+  margin-top: -13px; /* Desplaza el elemento principal hacia arriba en 13px */
+
+  > img {
+    border-radius: 16px; /* Establece un radio de borde de 16px para la imagen del elemento principal */
+    height: 100%; /* Establece la altura de la imagen del elemento principal al 100% del contenedor */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+
+    &:hover {
+      opacity: 0.6; /* Reduce la opacidad de la imagen al 60% en el estado de hover */
+      cursor: pointer; /* Cambia el cursor del mouse a "pointer" en el estado de hover */
+    }
+  }
+}
+
+.grid {
+  width: 75%; /* Establece el ancho de la cuadrícula al 75% del contenedor */
+  display: flex; /* Muestra los elementos de la cuadrícula en una fila */
+  flex-wrap: wrap; /* Permite que los elementos de la cuadrícula se envuelvan en varias líneas si es necesario */
+  padding-left: 10px; /* Agrega un relleno de 10px a la izquierda de la cuadrícula */
+
+  > div {
+    width: 32%; /* Establece el ancho de cada elemento de la cuadrícula al 32% del contenedor */
+
+    &:nth-child(1) {
+      padding: 0 10px 10px 0; /* Agrega un relleno específico para el primer elemento de la cuadrícula */
+    }
+    &:nth-child(2) {
+      padding: 0 0 10px 10px; /* Agrega un relleno específico para el segundo elemento de la cuadrícula */
+    }
+    &:nth-child(3) {
+      padding: 10px 10px 0 0; /* Agrega un relleno específico para el tercer elemento de la cuadrícula */
+      margin-top: -10px; /* Desplaza el tercer elemento hacia arriba en 10px */
+      margin-left: 20px; /* Desplaza el tercer elemento hacia la derecha en 20px */
+    }
+    &:nth-child(4) {
+      padding: 10px 0 0 10px; /* Agrega un relleno específico para el cuarto elemento de la cuadrícula */
+    }
+
+    > img {
+      border-radius: 16px; /* Establece un radio de borde de 16px para la imagen de cada elemento de la cuadrícula */
+
+      &:hover {
+        opacity: 0.6; /* Reduce la opacidad de la imagen al 60% en el estado de hover */
+        cursor: pointer; /* Cambia el cursor del mouse a "pointer" en el estado de hover */
+      }
+    }
+  }
+}
+.carouselContainer {
+  height: 100%; /* Establece la altura del contenedor de carrusel al 100% del contenedor padre */
+
+  > div {
+    height: 100%; /* Establece la altura del elemento secundario al 100% del contenedor de carrusel */
+
+    > div {
+      width: 60%; /* Establece el ancho del elemento secundario al 60% del contenedor de carrusel */
+      height: calc(
+        100% - 100px
+      ); /* Establece la altura del elemento secundario restando 100px de la altura total del contenedor de carrusel */
+      margin: 0 auto; /* Centra horizontalmente el elemento secundario */
+      border-radius: 20px; /* Establece un radio de borde de 20px para el elemento secundario */
+    }
+  }
+
+  .dots {
+    display: flex !important; /* Forza la visualización de los elementos de puntos (dots) como un flex-container */
+    align-items: flex-end; /* Alinea los elementos de puntos en la parte inferior */
+    justify-content: center; /* Centra horizontalmente los elementos de puntos */
+    height: 20px; /* Establece la altura de los elementos de puntos a 20px */
+
+    > li {
+      height: 100%; /* Establece la altura de cada elemento de puntos al 100% del contenedor */
+      width: 150px; /* Establece el ancho de cada elemento de puntos a 150px */
+      display: flex; /* Muestra los elementos de puntos como un flex-container */
+      align-items: center; /* Alinea verticalmente los elementos de puntos al centro */
+      justify-content: center; /* Centra horizontalmente los elementos de puntos */
+      margin: 0 10px; /* Establece un margen horizontal de 10px para los elementos de puntos */
+
+      img {
+        border-radius: 10px; /* Establece un radio de borde de 10px para la imagen dentro de los elementos de puntos */
+
+        &:hover {
+          cursor: pointer; /* Cambia el cursor del mouse a "pointer" en el estado de hover */
+          opacity: 0.6; /* Reduce la opacidad de la imagen al 60% en el estado de hover */
+        }
+      }
+    }
+  }
+}
